@@ -17,12 +17,16 @@
 
 <main class="grid h-[100vh]">
 	<!-- utility classes defined inline work -->
-	<div class="dark:bg-blue-900 bg-blue-100 grid place-items-center">
+	<div
+		class="dark:bg-blue-900 bg-blue-100 flex justify-center items-center flex-col gap-4"
+	>
+		<span>Defined inline</span>
 		<button onclick={toggleTheme} class="size-12 bg-black">
 			{isDark ? "☀️" : "🌙"}
 		</button>
 	</div>
-	<div class="foo grid place-items-center">
+	<div class="foo flex justify-center items-center flex-col gap-4">
+		<span>Defined with @apply</span>
 		<button onclick={toggleTheme} class="size-12 bg-black">
 			{isDark ? "☀️" : "🌙"}
 		</button>
